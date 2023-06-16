@@ -7,7 +7,7 @@ import java.util.List;
 public interface MovementRepository {
     public void save(Movement movement);
 
-    public Movement getByCodigo();
+    public Movement getByCodigo(Integer movementCodigo);
 
     public List<Movement> getAll();
 

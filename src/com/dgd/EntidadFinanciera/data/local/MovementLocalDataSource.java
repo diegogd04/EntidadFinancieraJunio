@@ -4,7 +4,7 @@ import com.dgd.EntidadFinanciera.domain.models.Movement;
 
 import java.util.List;
 
-public interface MovementDataSource {
+public interface MovementLocalDataSource {
     public void save(Movement movement);
 
     public Movement getByCodigo(Integer movementCodigo);

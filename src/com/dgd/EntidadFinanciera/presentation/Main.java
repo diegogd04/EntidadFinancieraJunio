@@ -2,6 +2,7 @@ package com.dgd.EntidadFinanciera.presentation;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        TeamView teamView = new TeamView();
+        teamView.init();
     }
 }

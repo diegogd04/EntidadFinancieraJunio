@@ -12,7 +12,7 @@ public class GetCustomersRemoteUseCase {
         this.customerRepository = customerRepository;
     }
 
-    public List<Customer> execute(){
+    public List<Customer> getAllWithRemote(){
         return customerRepository.getAllWithRemote();
     }
 }

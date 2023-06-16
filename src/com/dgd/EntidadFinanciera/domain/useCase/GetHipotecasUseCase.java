@@ -2,14 +2,16 @@ package com.dgd.EntidadFinanciera.domain.useCase;
 
 import com.dgd.EntidadFinanciera.domain.models.Hipoteca;
 
-public class GetHipotecaUseCase {
+import java.util.List;
+
+public class GetHipotecasUseCase {
     private HipotecaRepository hipotecaRepository;
 
-    public GetHipotecaUseCase(HipotecaRepository hipotecaRepository){
+    public GetHipotecasUseCase(HipotecaRepository hipotecaRepository){
         this.hipotecaRepository = hipotecaRepository;
     }
 
-    public Hipoteca getByCodigo(Integer hipotecaCodigo){
-        return hipotecaRepository.getByCodigo(hipotecaCodigo);
+    public List<Hipoteca> getAll(){
+        return hipotecaRepository.getAll();
     }
 }

@@ -9,7 +9,7 @@ public class GetEmpleadoUseCase {
         this.empleadoRepository = empleadoRepository;
     }
 
-    public Empleado execute(Integer empleadoDni){
+    public Empleado getByDni(Integer empleadoDni){
         return empleadoRepository.getByDni(empleadoDni);
     }
 }

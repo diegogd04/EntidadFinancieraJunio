@@ -12,7 +12,7 @@ public class GetEmpleadosUseCase {
         this.empleadoRepository = empleadoRepository;
     }
 
-    public List<Empleado> execute(){
+    public List<Empleado> getAll(){
         return empleadoRepository.getAll();
     }
 }

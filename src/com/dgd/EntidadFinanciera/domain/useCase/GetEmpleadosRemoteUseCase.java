@@ -11,7 +11,7 @@ public class GetEmpleadosRemoteUseCase {
         this.empleadoRepository = empleadoRepository;
     }
 
-    public List<Empleado> execute(){
+    public List<Empleado> getAllWithRemote(){
         return empleadoRepository.getAllWithRemote();
     }
 }

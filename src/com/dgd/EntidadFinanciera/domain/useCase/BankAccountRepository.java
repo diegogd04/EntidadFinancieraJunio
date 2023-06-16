@@ -5,5 +5,5 @@ import com.dgd.EntidadFinanciera.domain.models.BankAccount;
 public interface BankAccountRepository {
     public void save(BankAccount bankAccount);
 
-    public void getByNumeroCuenta(String numeroCuenta);
+    public BankAccount getByNumeroCuenta(String numeroCuenta);
 }

@@ -12,7 +12,7 @@ public class GetCustomersRemoteUseCase {
         this.customerRepository = customerRepository;
     }
 
-    public List<Customer> getAllWithRemote(){
-        return new ArrayList<>(customerRepository.getAllWithRemote());
+    public List<Customer> execute(){
+        return customerRepository.getAllWithRemote();
     }
 }

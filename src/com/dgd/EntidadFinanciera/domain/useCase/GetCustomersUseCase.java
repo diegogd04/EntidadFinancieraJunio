@@ -12,7 +12,7 @@ public class GetCustomersUseCase {
         this.customerRepository = customerRepository;
     }
 
-    public List<Customer> getAll(){
-        return new ArrayList<>();
+    public List<Customer> execute(){
+        return customerRepository.getAll();
     }
 }

@@ -5,14 +5,14 @@ import com.dgd.EntidadFinanciera.domain.models.Customer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetCustomersUseCase {
+public class GetCustomersRemoteUseCase {
     private CustomerRepository customerRepository;
 
-    public GetCustomersUseCase(CustomerRepository customerRepository){
+    public  GetCustomersRemoteUseCase(CustomerRepository customerRepository){
         this.customerRepository = customerRepository;
     }
 
-    public List<Customer> getAll(){
-        return new ArrayList<>();
+    public List<Customer> getAllWithRemote(){
+        return new ArrayList<>(customerRepository.getAllWithRemote());
     }
 }
